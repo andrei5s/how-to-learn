@@ -13,12 +13,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
-  
-}
-
-div {
-  border: 1px solid red;
+  /* выше установили ограничения для секции */ 
 }
 
  .logo_place_header {
@@ -26,7 +21,7 @@ div {
    left: 64px;
    top: 30px;
    height: 32px;
-   width: 183px; 
+   width: 183px;
  }
 
  .header_title {
@@ -63,7 +58,6 @@ div {
   right: 0;
   bottom: 0;
   z-index: 2;
- 
  }
  
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -71,7 +65,6 @@ div {
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  
   top: 64px;
   position: absolute;
   right: 0;
@@ -169,7 +162,7 @@ p a:first-child {
 .table_heading {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .table_text {
@@ -272,6 +265,8 @@ p a:first-child {
   justify-content: space-between;
   width: 1100px;
   margin-bottom: 90px;
+  position: relative;
+  z-index: 2;
 }
 
 .table__cell_theme_dark {
@@ -284,7 +279,7 @@ p a:first-child {
 .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bold;  
+  font-weight: bold; 
 }
 
 .table__text_theme_dark {
@@ -299,7 +294,7 @@ p a:first-child {
   width: 877px;
   right: -210px;
   position: absolute;
-  margin-bottom: 0vh; 
+  z-index: 1; 
 }
 
 .footer {
@@ -308,19 +303,19 @@ p a:first-child {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: #000000; 
+  background-color: #000000;
 }
 
 .footer_columns {
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
-  display: flex; 
+  display: flex;
   min-height: 350px;
 }
 
 .footer__column_content_copyright {
-   flex-basis: 711px;
+  flex-basis: 711px;
    margin-left: auto;
    display:flex;
    flex-wrap: wrap;
@@ -330,10 +325,7 @@ p a:first-child {
 .logo__place_footer {
   background-image: url(../images/logo_place_footer.svg);
   width: 185px;
-  height: 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  height: 35px; 
 }
 
 .footer__author {
@@ -344,7 +336,7 @@ p a:first-child {
   color: white;
   padding-bottom: 18px;
   display: flex;
-  align-self: flex-end; 
+  align-self: flex-end;
   position: absolute;
 }
 
@@ -357,8 +349,7 @@ p a:first-child {
 
 .footer__column_content_social {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 
 .footer__column_heading {
