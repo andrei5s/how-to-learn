@@ -310,7 +310,7 @@ p a:first-child {
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
-  display: flex; 
+  display: flex;
   min-height: 350px;
 }
 
@@ -339,7 +339,7 @@ p a:first-child {
   color: white;
   padding-bottom: 18px;
   display: flex;
-  align-self: flex-end; 
+  align-self: flex-end;
   position: absolute;
 }
 
