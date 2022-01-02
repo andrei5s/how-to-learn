@@ -325,10 +325,7 @@ p a:first-child {
 .logo__place_footer {
   background-image: url(../images/logo_place_footer.svg);
   width: 185px;
-  height: 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  height: 35px; 
 }
 
 .footer__author {
