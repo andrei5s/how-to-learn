@@ -13,12 +13,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
-  
-}
-
-div {
-  border: 1px solid red;
+  /* выше установили ограничения для секции */  
 }
 
  .logo_place_header {
@@ -63,7 +58,6 @@ div {
   right: 0;
   bottom: 0;
   z-index: 2;
- 
  }
  
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -71,7 +65,6 @@ div {
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  
   top: 64px;
   position: absolute;
   right: 0;
@@ -352,13 +345,12 @@ p a:first-child {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-left: 30%;
+  list-style-position: outside;
 }
 
 .footer__column_content_social {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 
 .footer__column_heading {
