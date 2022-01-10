@@ -125,7 +125,7 @@
     margin-top: 30px;
 }
 
-.two-colomnus__span-accent {
+.two-columns__span-accent {
     line-height: 34px;
     font-size: 24px;
     font-weight: bold;
@@ -143,7 +143,7 @@
     line-height: 1.15;
     font-size: 60px;
     font-weight: bold;
-    margin: 0 0 20px 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,7 +252,7 @@
     overflow: hidden;
 }
 
-.kaufman-title__theme_dark {
+.section-title_theme_dark {
     margin: 90px 0 0 0;
     width: 60%;
     line-height: 1.15;
@@ -265,7 +265,7 @@
     z-index: 3;
 }
 
-.kaufman-subtitle__theme_dark {
+.section-subtitle_theme_dark {
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
@@ -320,33 +320,24 @@
 
 .footer {
     min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
     background-color: #1f1f1f;
+    display: flex;
 }
 
 .footer__columns {
     margin: 60px auto 40px;
     width: 90%;
-    display: flex;
-    justify-content: space-between;
     min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer__column_content_copyright {
     flex-basis: 711px;
     display: flex;
-}
-
-.footer__column_content_copyright:first-child {
     flex-direction: column;
     justify-content: space-between;
-}
-
-.footer__column_content_copyright:last-child {
-    justify-content: flex-end;
 }
 
 .logo_place_footer {
@@ -366,8 +357,6 @@
 .footer__column_content_info {
     display: flex;
     flex-direction: column;
-    margin-right: 25%;
-    text-align: left;
 }
 
 .footer__column_content_social {
@@ -386,11 +375,6 @@
 .footer__column-links {
     margin-top: 20px;
     margin-bottom: 16px;
-    list-style-type: none;
-}
-
-ul {
-    padding: 0;
 }
 
 .footer__column-link {
@@ -399,11 +383,15 @@ ul {
     font-weight: normal;
     color: white;
     text-decoration: none;
-    text-align: start;
 }
 
 .footer__social-icon {
     height: 16px;
     width: 16px;
     margin-right: 10px;
+}
+
+.footer__list {
+    list-style-type: none;
+    padding: 0;
 }
