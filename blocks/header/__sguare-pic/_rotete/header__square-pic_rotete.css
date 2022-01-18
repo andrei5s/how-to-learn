@@ -1,0 +1,6 @@
+.header__square-pic_rotate {
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

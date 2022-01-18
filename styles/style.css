@@ -1,3 +1,12 @@
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,13 +19,14 @@
 }
 
 .header {
-    height: 100vh;
     min-height: 600px;
     max-height: 756px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
     /* выше установили ограничения для секции */
 }
 
@@ -55,6 +65,11 @@
     z-index: 5;
 }
 
+.header__link:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
 .header__main-illustration {
     height: 608px;
     width: 765px;
@@ -75,6 +90,13 @@
     position: absolute;
     right: 0;
     z-index: 1;
+}
+
+.header__square-pic_rotate {
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .description {
@@ -115,14 +137,12 @@
     line-height: 34px;
     font-weight: normal;
     margin: 0;
+    padding: 0;
 }
 
-.two-columns__paragraph:first-child {
-    margin-bottom: 30px;
-}
-
-.two-columns__paragraph:last-child {
+.two-columns__paragraph:nth-child(2) {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -131,8 +151,78 @@
     font-weight: bold;
 }
 
+.techniques {
+    width: 80%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    width: 920px;
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-column-gap: 100px;
+}
+
+.cards__item {
+    width: 240px;
+}
+
+.cards__images {
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    margin: 60px 40px 43px 40px;
+}
+
+.cards__title {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.cards__description {
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 16px 0 0 0;
+    text-align: center;
+}
+
+.video {
+    margin: 100px 0 -60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__iframes {
+    height: 316px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 515px);
+    grid-column-gap: 20px;
+}
+
+.video__iframe {
+    width: 515px;
+    height: 316px;
+}
+
+.oakley {
+    padding-top: 160px;
+    background-color: #f2f2f2;
+}
+
 .digits {
-    margin: 100px 0;
+    margin: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,8 +278,76 @@
     margin: 20px 0 0 0;
 }
 
+.khan {
+    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.khan__author {
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.khan__title {
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.khan__quote {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    width: 790px;
+    margin: 50px 0 0 0;
+}
+
+.khan__quote-author {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 36px 0 0 0;
+}
+
+.khan__quote-author-subline {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0 68px 0;
+}
+
+.khan__book-container {
+    display: flex;
+    align-self: start;
+}
+
+.khan__book-pic {
+    max-width: 620px;
+    max-height: 608px;
+    object-fit: contain;
+    object-position: left;
+}
+
+.khan__buy-link {
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #2f80ed;
+    margin-left: 48px;
+}
+
+.khan__buy-link:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
 .feynman {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,6 +389,11 @@
     font-weight: normal;
     right: 48px;
     text-decoration: none;
+}
+
+.feynman__link:hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .feynman__illustration {
@@ -318,6 +481,36 @@
     z-index: 1;
 }
 
+.kaufman__triangle_rotete {
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.resources {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resources__logo-zone {
+    width: 1100px;
+    margin-top: 80px;
+    margin-bottom: 217px;
+}
+
+.resources__logo {
+    width: 270px;
+    height: 38px;
+}
+
+.resources__logo:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
 .footer {
     min-height: 350px;
     background-color: #1f1f1f;
@@ -383,6 +576,11 @@
     font-weight: normal;
     color: white;
     text-decoration: none;
+}
+
+.footer__column-link:hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .footer__social-icon {
